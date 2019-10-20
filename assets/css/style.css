@@ -1,0 +1,20 @@
+ html,
+ body,
+ h1,
+ h2 {
+     background-image: url("../images/bg1.png");
+ }
+
+ h1,
+ h2,
+ p,
+ form,
+ .btn-primary,
+ #answer-block {
+     text-align: center;
+     color: white;
+ }
+
+ p {
+     font-size: 1.5em
+ }

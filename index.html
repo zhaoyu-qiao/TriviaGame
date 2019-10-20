@@ -5,29 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <script src="assets/javascript/app.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <h1>The Trivia Game!</h1>
-    <p>Introduction</p>
-    <div id="time-left"></div>
+    <h1 class="jumbotron">The Trivia Game!</h1>
+    <p id="time-left"></p>
     <form class="questions">
-        <p id="question">Question1</p>
+        <p id="question"></p>
         <div class="options"></div>
-        <!--Below needs to be written in the html from js-->
+        <!--Below needs to be written in the html from js
         <input type="radio" name="question" value="answer1"> answer1
         <input type="radio" name="question" value="answer2"> answer2
         <input type="radio" name="question" value="answer3"> answer3
-        <input type="radio" name="question" value="answer4"> answer4
+        <input type="radio" name="question" value="answer4"> answer4-->
     </form>
-
-    <button id="start" class="btn">Start The Game!</button>
-    <button id="next" class="btn">Next Question!</button>
-    <button id="restart" class="btn">Start Over?</button>
+    <div id="answer-block">
+        <p id="answer"></p>
+        <img id="img" />
+    </div>
+    <button id="start" class="btn btn-primary">Start The Game!</button>
+    <button id="next" class="btn btn-primary">Next Question!</button>
+    <button id="restart" class="btn btn-primary">Start Over?</button>
     <h2 id="results">Result<h2>
             <p id="correct"></p>
             <p id="incorrect"></p>
